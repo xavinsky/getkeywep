@@ -1,0 +1,3 @@
+#!/bin/sh
+aircrack-ng -x cap/*.cap
+

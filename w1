@@ -1,0 +1,4 @@
+#!/bin/sh
+airmon-ng stop ath0
+airmon-ng start wifi0
+airodump-ng  ath1

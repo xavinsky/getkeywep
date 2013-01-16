@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# change mac
+ifconfig ath0 down
+ifconfig ath0 hw ether $1
+ifconfig ath0 up
+
+# restart interface reseau
+/etc/init.d/networking restart 
+
+# voir les adresse mac du reseau
+arp 

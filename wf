@@ -1,0 +1,5 @@
+#!/bin/sh
+wlanconfig ath1 destroy
+wlanconfig ath0 destroy
+wlanconfig ath0_rename destroy
+wlanconfig ath0 create wlandev wifi0 wlanmode sta

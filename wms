@@ -1,0 +1,8 @@
+#!/bin/sh
+ifconfig ath1 down
+ifconfig ath1 hw ether $1
+ifconfig ath1 up
+
+/etc/init.d/networking restart 
+
+arp 

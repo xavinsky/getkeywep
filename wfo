@@ -1,0 +1,6 @@
+#!/bin/sh
+wlanconfig ath1 destroy
+wlanconfig ath0 create wlandev wifi0 wlanmode sta
+echo "$1"
+iwconfig ath0 essid "$1"
+dhclient ath0
